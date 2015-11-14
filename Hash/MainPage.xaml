@@ -8,12 +8,28 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="*"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition  Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="*"/>
+            <ColumnDefinition  Width="auto"/>
+            <ColumnDefinition  Width="*"/>
+        </Grid.ColumnDefinitions>
 
-        <StackPanel>
-            <Button x:Name="PickAFileButton" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Pick a file" Margin="10" Click="PickAFileButton_Click"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="请输入期望校验值" FontSize="16" />
+        <TextBox  x:Name="InputTextBox" Grid.Row="2" Grid.Column="1"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="480"/>
+        <Button   x:Name="PickAFileButton" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="选取要校验的文件" Margin="10" Click="PickAFileButton_Click"/>
 
-            <TextBlock x:Name="OutputTextBlock" TextWrapping="Wrap"/>
-        </StackPanel>
+        
+
+        <TextBlock   x:Name="OutputTextBlock" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"/>
+
 
     </Grid>
 </Page>

@@ -59,6 +59,10 @@ namespace Hash
 
                 // Application now has read/write access to the picked file
                 OutputTextBlock.Text = strEncodedHash;
+                if (strEncodedHash==InputTextBox.Text)
+                {
+                    InputTextBox.Text = "恭喜，校验正确";
+                }
            
             }
             else
