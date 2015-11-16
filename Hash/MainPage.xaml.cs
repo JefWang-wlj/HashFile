@@ -51,6 +51,7 @@ namespace Hash
             openPicker.FileTypeFilter.Add(".jpg");
             openPicker.FileTypeFilter.Add(".mp4");
             StorageFile file = await openPicker.PickSingleFileAsync();
+            OutputTextBlock.Text = "请稍后……";
             if (file != null)
             {
                 // Hash a message.
@@ -59,15 +60,12 @@ namespace Hash
 
                 // Application now has read/write access to the picked file
                 OutputTextBlock.Text = strEncodedHash;
-                if (strEncodedHash==InputTextBox.Text)
-                {
-                    InputTextBox.Text = "恭喜，校验正确";
-                }
+
            
             }
             else
             {
-                OutputTextBlock.Text = "Operation cancelled.";
+                OutputTextBlock.Text = "操作取消";
             }
         }
 
