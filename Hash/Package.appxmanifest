@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="c5a8bbf4-5ff1-4b01-9494-1e92ff70c5a4" Publisher="CN=wxn2l" Version="1.0.0.0" />
+  <Identity Name="33629.336433C7BBDA" Publisher="CN=64D5F0B3-1AA2-4A88-9380-F1F9F38B9A7D" Version="1.1.3.0" />
   <mp:PhoneIdentity PhoneProductId="c5a8bbf4-5ff1-4b01-9494-1e92ff70c5a4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Hash</DisplayName>
-    <PublisherDisplayName>wxn2l</PublisherDisplayName>
+    <DisplayName>文件校验工具</DisplayName>
+    <PublisherDisplayName>王林杰</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Hash.App">
-      <uap:VisualElements DisplayName="Hash" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Hash" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="文件校验工具" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Hash" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square310x310Logo" />
